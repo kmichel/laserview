@@ -1,5 +1,6 @@
 #import "LVDocument.h"
 #import "LVImageView.h"
+#import "LVWindowController.h"
 #import "NSWindow+LVContentSize.h"
 
 @implementation LVDocument
@@ -11,6 +12,12 @@
 - (NSString *)windowNibName
 {
 	return @"LVDocument";
+}
+
+- (void)makeWindowControllers
+{
+	LVWindowController * const controller = [[LVWindowController alloc] initWithWindowNibName:self.windowNibName owner:self];
+	[self addWindowController:controller];
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)controller
@@ -25,13 +32,18 @@
 	[window setDelegate:self];
 }
 
+- (void)windowDidResize:(NSNotification *) __attribute__((unused)) notification
+{
+	for (NSWindowController * const controller in self.windowControllers)
+		[controller synchronizeWindowTitleWithDocumentName];
+}
+
 - (void)windowWillEnterFullScreen:(NSNotification *) notification
 {
 	NSWindow * const window = (NSWindow *) notification.object;
 	window.contentAspectRatio = window.screen.frame.size;
 	self.imageView.imageScaling = NSImageScaleProportionallyUpOrDown;
 }
-
 
 - (void)windowWillExitFullScreen:(NSNotification *) notification
 {
