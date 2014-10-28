@@ -43,8 +43,10 @@
 - (void)windowDidExitFullScreen:(NSNotification *) notification
 {
 	NSWindow * const window = (NSWindow *) notification.object;
-	if (self.resizeWindowAfterFullscreen)
+	if (self.resizeWindowAfterFullscreen) {
+		self.resizeWindowAfterFullscreen = NO;
 		[window setContentSizeAnimated:self.image.size];
+	}
 }
 
 - (void)setImage:(NSImage *)newImage {
