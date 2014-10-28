@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1080805A19FEBE5B00A3F8CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1080805919FEBE5B00A3F8CD /* Cocoa.framework */; };
+		1080806419FEBE5B00A3F8CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1080806219FEBE5B00A3F8CD /* InfoPlist.strings */; };
+		1080806619FEBE5B00A3F8CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080806519FEBE5B00A3F8CD /* main.m */; };
+		1080806D19FEBE5B00A3F8CD /* LVDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1080806C19FEBE5B00A3F8CD /* LVDocument.m */; };
+		1080807019FEBE5B00A3F8CD /* LVDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080806E19FEBE5B00A3F8CD /* LVDocument.xib */; };
+		1080807319FEBE5C00A3F8CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080807119FEBE5C00A3F8CD /* MainMenu.xib */; };
+		10A4D8D319FEE184004A8498 /* LVImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A4D8D219FEE184004A8498 /* LVImageView.m */; };
+		10A4D8D819FEE4A5004A8498 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 10A4D8D619FEE4A5004A8498 /* Credits.html */; };
+		10A4D8DB19FEFA2E004A8498 /* NSWindow+LVContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A4D8DA19FEFA2E004A8498 /* NSWindow+LVContentSize.m */; };
+		10ED2DD319FF3BE9008E7C36 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 10ED2DD219FF3BE9008E7C36 /* icon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1080805619FEBE5B00A3F8CD /* LaserView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaserView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1080805919FEBE5B00A3F8CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1080805C19FEBE5B00A3F8CD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1080805D19FEBE5B00A3F8CD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1080805E19FEBE5B00A3F8CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1080806119FEBE5B00A3F8CD /* LaserView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LaserView-Info.plist"; sourceTree = "<group>"; };
+		1080806319FEBE5B00A3F8CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1080806519FEBE5B00A3F8CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1080806719FEBE5B00A3F8CD /* LaserView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LaserView-Prefix.pch"; sourceTree = "<group>"; };
+		1080806B19FEBE5B00A3F8CD /* LVDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVDocument.h; sourceTree = "<group>"; };
+		1080806C19FEBE5B00A3F8CD /* LVDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LVDocument.m; sourceTree = "<group>"; };
+		1080806F19FEBE5B00A3F8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LVDocument.xib; sourceTree = "<group>"; };
+		1080807219FEBE5C00A3F8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1080807B19FEBE5C00A3F8CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		10A4D8D119FEE184004A8498 /* LVImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVImageView.h; sourceTree = "<group>"; };
+		10A4D8D219FEE184004A8498 /* LVImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVImageView.m; sourceTree = "<group>"; };
+		10A4D8D719FEE4A5004A8498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Credits.html; sourceTree = "<group>"; };
+		10A4D8D919FEFA2E004A8498 /* NSWindow+LVContentSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+LVContentSize.h"; sourceTree = "<group>"; };
+		10A4D8DA19FEFA2E004A8498 /* NSWindow+LVContentSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+LVContentSize.m"; sourceTree = "<group>"; };
+		10ED2DD219FF3BE9008E7C36 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1080805319FEBE5B00A3F8CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1080805A19FEBE5B00A3F8CD /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1080804D19FEBE5B00A3F8CD = {
+			isa = PBXGroup;
+			children = (
+				1080805F19FEBE5B00A3F8CD /* laserview */,
+				1080805819FEBE5B00A3F8CD /* Frameworks */,
+				1080805719FEBE5B00A3F8CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1080805719FEBE5B00A3F8CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1080805619FEBE5B00A3F8CD /* LaserView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1080805819FEBE5B00A3F8CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1080805919FEBE5B00A3F8CD /* Cocoa.framework */,
+				1080807B19FEBE5C00A3F8CD /* XCTest.framework */,
+				1080805B19FEBE5B00A3F8CD /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1080805B19FEBE5B00A3F8CD /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1080805C19FEBE5B00A3F8CD /* AppKit.framework */,
+				1080805D19FEBE5B00A3F8CD /* CoreData.framework */,
+				1080805E19FEBE5B00A3F8CD /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1080805F19FEBE5B00A3F8CD /* laserview */ = {
+			isa = PBXGroup;
+			children = (
+				1080806B19FEBE5B00A3F8CD /* LVDocument.h */,
+				1080806C19FEBE5B00A3F8CD /* LVDocument.m */,
+				1080806E19FEBE5B00A3F8CD /* LVDocument.xib */,
+				10A4D8D119FEE184004A8498 /* LVImageView.h */,
+				10A4D8D219FEE184004A8498 /* LVImageView.m */,
+				10A4D8D919FEFA2E004A8498 /* NSWindow+LVContentSize.h */,
+				10A4D8DA19FEFA2E004A8498 /* NSWindow+LVContentSize.m */,
+				1080807119FEBE5C00A3F8CD /* MainMenu.xib */,
+				1080806019FEBE5B00A3F8CD /* Supporting Files */,
+			);
+			path = laserview;
+			sourceTree = "<group>";
+		};
+		1080806019FEBE5B00A3F8CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10ED2DD219FF3BE9008E7C36 /* icon.icns */,
+				1080806119FEBE5B00A3F8CD /* LaserView-Info.plist */,
+				1080806219FEBE5B00A3F8CD /* InfoPlist.strings */,
+				1080806519FEBE5B00A3F8CD /* main.m */,
+				1080806719FEBE5B00A3F8CD /* LaserView-Prefix.pch */,
+				10A4D8D619FEE4A5004A8498 /* Credits.html */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1080805519FEBE5B00A3F8CD /* LaserView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1080808A19FEBE5C00A3F8CD /* Build configuration list for PBXNativeTarget "LaserView" */;
+			buildPhases = (
+				1080805219FEBE5B00A3F8CD /* Sources */,
+				1080805319FEBE5B00A3F8CD /* Frameworks */,
+				1080805419FEBE5B00A3F8CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaserView;
+			productName = laserview;
+			productReference = 1080805619FEBE5B00A3F8CD /* LaserView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1080804E19FEBE5B00A3F8CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LV;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kmichel.info;
+			};
+			buildConfigurationList = 1080805119FEBE5B00A3F8CD /* Build configuration list for PBXProject "LaserView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1080804D19FEBE5B00A3F8CD;
+			productRefGroup = 1080805719FEBE5B00A3F8CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1080805519FEBE5B00A3F8CD /* LaserView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1080805419FEBE5B00A3F8CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10ED2DD319FF3BE9008E7C36 /* icon.icns in Resources */,
+				1080806419FEBE5B00A3F8CD /* InfoPlist.strings in Resources */,
+				1080807019FEBE5B00A3F8CD /* LVDocument.xib in Resources */,
+				1080807319FEBE5C00A3F8CD /* MainMenu.xib in Resources */,
+				10A4D8D819FEE4A5004A8498 /* Credits.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1080805219FEBE5B00A3F8CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1080806D19FEBE5B00A3F8CD /* LVDocument.m in Sources */,
+				1080806619FEBE5B00A3F8CD /* main.m in Sources */,
+				10A4D8D319FEE184004A8498 /* LVImageView.m in Sources */,
+				10A4D8DB19FEFA2E004A8498 /* NSWindow+LVContentSize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1080806219FEBE5B00A3F8CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1080806319FEBE5B00A3F8CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1080806E19FEBE5B00A3F8CD /* LVDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1080806F19FEBE5B00A3F8CD /* Base */,
+			);
+			name = LVDocument.xib;
+			sourceTree = "<group>";
+		};
+		1080807119FEBE5C00A3F8CD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1080807219FEBE5C00A3F8CD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		10A4D8D619FEE4A5004A8498 /* Credits.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10A4D8D719FEE4A5004A8498 /* en */,
+			);
+			name = Credits.html;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1080808819FEBE5C00A3F8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1080808919FEBE5C00A3F8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1080808B19FEBE5C00A3F8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "laserview/LaserView-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				INFOPLIST_FILE = "laserview/LaserView-Info.plist";
+				PRODUCT_NAME = LaserView;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = "-Weverything";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1080808C19FEBE5C00A3F8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "laserview/LaserView-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				INFOPLIST_FILE = "laserview/LaserView-Info.plist";
+				PRODUCT_NAME = LaserView;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WARNING_CFLAGS = "-Weverything";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1080805119FEBE5B00A3F8CD /* Build configuration list for PBXProject "LaserView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1080808819FEBE5C00A3F8CD /* Debug */,
+				1080808919FEBE5C00A3F8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1080808A19FEBE5C00A3F8CD /* Build configuration list for PBXNativeTarget "LaserView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1080808B19FEBE5C00A3F8CD /* Debug */,
+				1080808C19FEBE5C00A3F8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1080804E19FEBE5B00A3F8CD /* Project object */;
+}
