@@ -14,6 +14,7 @@
 		1080807019FEBE5B00A3F8CD /* LVDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080806E19FEBE5B00A3F8CD /* LVDocument.xib */; };
 		1080807319FEBE5C00A3F8CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1080807119FEBE5C00A3F8CD /* MainMenu.xib */; };
 		10A2E6C81A0005900096539B /* LVWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E6C71A0005900096539B /* LVWindowController.m */; };
+		10A2E6CB1A0011920096539B /* LVWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A2E6CA1A0011920096539B /* LVWindow.m */; };
 		10A4D8D319FEE184004A8498 /* LVImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A4D8D219FEE184004A8498 /* LVImageView.m */; };
 		10A4D8D819FEE4A5004A8498 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 10A4D8D619FEE4A5004A8498 /* Credits.html */; };
 		10A4D8DB19FEFA2E004A8498 /* NSWindow+LVContentSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 10A4D8DA19FEFA2E004A8498 /* NSWindow+LVContentSize.m */; };
@@ -37,6 +38,9 @@
 		1080807B19FEBE5C00A3F8CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		10A2E6C61A0005900096539B /* LVWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVWindowController.h; sourceTree = "<group>"; };
 		10A2E6C71A0005900096539B /* LVWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVWindowController.m; sourceTree = "<group>"; };
+		10A2E6C91A0011920096539B /* LVWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVWindow.h; sourceTree = "<group>"; };
+		10A2E6CA1A0011920096539B /* LVWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVWindow.m; sourceTree = "<group>"; };
+		10A2E6CC1A0024D90096539B /* LVDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LVDirection.h; sourceTree = "<group>"; };
 		10A4D8D119FEE184004A8498 /* LVImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVImageView.h; sourceTree = "<group>"; };
 		10A4D8D219FEE184004A8498 /* LVImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVImageView.m; sourceTree = "<group>"; };
 		10A4D8D719FEE4A5004A8498 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/Credits.html; sourceTree = "<group>"; };
@@ -97,11 +101,14 @@
 		1080805F19FEBE5B00A3F8CD /* laserview */ = {
 			isa = PBXGroup;
 			children = (
+				10A2E6CC1A0024D90096539B /* LVDirection.h */,
 				1080806B19FEBE5B00A3F8CD /* LVDocument.h */,
 				1080806C19FEBE5B00A3F8CD /* LVDocument.m */,
 				1080806E19FEBE5B00A3F8CD /* LVDocument.xib */,
 				10A4D8D119FEE184004A8498 /* LVImageView.h */,
 				10A4D8D219FEE184004A8498 /* LVImageView.m */,
+				10A2E6C91A0011920096539B /* LVWindow.h */,
+				10A2E6CA1A0011920096539B /* LVWindow.m */,
 				10A2E6C61A0005900096539B /* LVWindowController.h */,
 				10A2E6C71A0005900096539B /* LVWindowController.m */,
 				10A4D8D919FEFA2E004A8498 /* NSWindow+LVContentSize.h */,
@@ -198,6 +205,7 @@
 				1080806619FEBE5B00A3F8CD /* main.m in Sources */,
 				10A4D8D319FEE184004A8498 /* LVImageView.m in Sources */,
 				10A4D8DB19FEFA2E004A8498 /* NSWindow+LVContentSize.m in Sources */,
+				10A2E6CB1A0011920096539B /* LVWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

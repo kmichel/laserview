@@ -1,7 +1,14 @@
 #import "LVWindowController.h"
+#import "LVWindow.h"
 #import "LVDocument.h"
 
 @implementation LVWindowController
+
+- (void)windowDidLoad
+{
+	LVWindow * const lvWindow = (LVWindow *) self.window;
+	lvWindow.document = (LVDocument *)self.document;
+}
 
 - (NSString *)windowTitleForDocumentDisplayName:(NSString *)displayName
 {
