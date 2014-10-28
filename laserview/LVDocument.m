@@ -3,6 +3,12 @@
 #import "LVWindowController.h"
 #import "NSWindow+LVContentSize.h"
 
+@interface LVDocument ()
+
+@property (nonatomic,assign) BOOL resizeWindowAfterFullscreen;
+
+@end
+
 @implementation LVDocument
 
 @synthesize image;

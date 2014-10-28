@@ -8,8 +8,6 @@
 
 @property (atomic,assign) IBOutlet NSImageView* imageView;
 
-@property (nonatomic,assign) BOOL resizeWindowAfterFullscreen;
-
 - (void)loadImage:(LVDirection)direction;
 
 @end
