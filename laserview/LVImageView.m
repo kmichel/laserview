@@ -16,7 +16,10 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
-	[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationNone];
+	if (self.frame.size.width < self.image.size.width || self.frame.size.height < self.image.size.height)
+		[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationHigh];
+	else
+		[[NSGraphicsContext currentContext] setImageInterpolation:NSImageInterpolationNone];
     [super drawRect:dirtyRect];
 }
 
