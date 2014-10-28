@@ -25,7 +25,9 @@
 		NSRect contentRect = [self contentRectForFrameRect:self.frame];
 		CGFloat const dx = contentRect.size.width - size.width;
 		CGFloat const dy = contentRect.size.height - size.height;
-		contentRect.origin.x += dx * 0.5f;
+		// If we dont give integral coordinates we sometimes end up with
+		// off-by-one errors in the final size of the window.
+		contentRect.origin.x += floor(dx * 0.5f);
 		contentRect.origin.y += dy;
 		contentRect.size = size;
 		NSRect frame = [self frameRectForContentRect:contentRect];
